@@ -268,7 +268,7 @@
 							<ul class="flex reverse">
 
 								
-
+ 
 								
 
 							</ul>
@@ -278,9 +278,13 @@
 				</div>
 			</div>
 			<div class="background">
-				<video poster="assets/img/app-bg-v2.jpg" autoplay loop muted>
-  					<source src="assets/bg.mp4" type="video/mp4">				
+				<video id="vid" poster="assets/img/app-bg-v2.jpg" autoplay loop muted>
+  					<source src="assets/bg.mp4" type="video/mp4">
 				</video>
+				<div class="controls">
+					<a href="#" class="speaker mute" onclick="sounOnOff();"><span></span></a>
+					<input id="vol-control" type="range" min="0" max="100" step="1" oninput="SetVolume(this.value)" onchange="SetVolume(this.value)"></input>					
+				</div>
 			</div>
 			<img class="ae-1 fromBottom linesHalf" src="assets/img/45deg-lines-rotated.png" alt="Lines">
 			<img class="ae-1 fromBottom linesHalfBottom" src="assets/img/45deg-lines.png" alt="Lines">

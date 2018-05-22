@@ -214,3 +214,30 @@ function translate() {
 }
 
 translate();
+
+function sounOnOff(){
+	var player = $('#vid');
+	var speaker = $('.controls .speaker');
+	var in0 = player[0];
+
+	if (in0.muted === true){
+		in0.muted = false;
+		in0.volume = 0.1;
+		speaker.removeClass('mute');
+	}else{
+		in0.muted = true;
+		in0.volume = 0.1;
+		speaker.addClass('mute');
+	}
+}
+function SetVolume(val) {
+    var player = $('#vid');
+    player[0].volume = val / 100;   
+}
+
+$( document ).ready(function() {
+	//block jumping over the doc
+	$('.controls .speaker').click(function(e) {
+	  e.preventDefault();
+	});
+});
