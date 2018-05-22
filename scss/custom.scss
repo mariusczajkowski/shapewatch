@@ -1,0 +1,204 @@
+.shiftImage {
+  margin-top:-15%;
+  margin-bottom:-100%;
+}
+
+.shiftImageVertical {
+  margin-right:30%;
+  max-width:none;
+}
+ 
+.shiftImageRight {
+  margin-top:-15%;
+  margin-bottom:-100%;
+}
+
+.shiftImageVerticalRight {
+  margin-right:-100%;
+  max-width:none;
+}
+
+//J
+.changeLang{
+	a{
+		position: relative;
+		img{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 50px;
+			max-width: 130%;
+			&.us-flag{
+				display: none;
+			}			
+		}
+	}
+}
+.sidebar{
+	.changeLang{
+		height: 45.6px;
+		width: 100%;
+		a{
+			position: relative;
+			width: 100%;
+			height: 100%;
+			img{
+				left: 0;
+				transform: translate(0, -50%);
+				width: auto;				
+			}
+		}
+	}
+}
+img.linesHalf, img.linesHalfBottom{
+    -webkit-user-select: none; /* Safari 3.1+ */
+    -moz-user-select: none; /* Firefox 2+ */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none; /* Standard syntax */
+}
+img.linesHalfBottom{
+	z-index: 1!important;
+}
+section.slide{
+	&[name="about"]{
+		position: relative;
+		z-index: 11;
+		overflow: visible;
+		&.selected{
+			z-index: 11;
+		}
+		img.linesHalf{
+			position: absolute;
+			bottom: -15%;
+			left: 0;
+			width: 18.8%;
+		}
+	}
+
+	&[name="features"]{
+		z-index: -1!important;
+		img.linesHalf{
+			position: absolute;
+			bottom: -15%;
+			right: 0;
+			width: 18.8%;
+		}		
+	}
+	&[name="contact"]{
+		.centerGrid{
+			justify-items: center;
+			justify-content: center;
+			align-content: center;
+			align-items: center;
+			display: flex;			
+		}
+	}
+	&[name="how"]{
+		position: relative;
+		z-index: 12;
+		overflow: visible;
+		.content{
+			background: none;
+		}
+		&.selected{
+			z-index: 12;
+		}
+		&:before{
+			position: absolute;
+			content: "";
+			background: rgba(17, 19, 20, 0.7);
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+		}		
+		img.linesHalf{
+			position: absolute;
+			top: -15%;
+			right: 0;
+			width: 18.8%;
+			z-index: 100;		
+		}	
+		img.linesHalfBottom{
+			position: absolute;
+			bottom: -15%;
+			left: 0;
+			width: 18.8%;
+			z-index: 100;
+		}	
+	}
+	&[name="kiosk"]{
+		position: relative;
+		z-index: 11;
+		overflow: visible;
+		&.selected{
+			z-index: 11;
+		}
+		img.linesHalf{
+			position: absolute;
+			top: -15%;
+			left: 0;
+			width: 18.8%;
+		}
+	}
+	&[name="app"]{
+		position: relative;
+		z-index: 12;
+		overflow: visible;
+		&.selected{
+			z-index: 12;
+		}
+		img.linesHalf{
+			position: absolute;
+			top: -15%;
+			right: 0;
+			width: 18.8%;
+		}
+		img.linesHalfBottom{
+			position: absolute;
+			bottom: -15%;
+			left: 0;
+			width: 18.8%;
+			z-index: 100;
+		}				
+	}
+	&[name="news"]{
+		position: relative;
+		z-index: 11;
+		overflow: visible;
+		&.selected{
+			z-index: 11;
+		}
+		img.linesHalf{
+			position: absolute;
+			top: -15%;
+			left: 0;
+			width: 18.8%;
+		}
+	}
+	&[name="contact"]{
+		position: relative;
+		z-index: 11;
+		overflow: visible;
+		&.selected{
+			z-index: 11;
+		}
+		img.linesHalf{
+			position: absolute;
+			width: 18.8%;
+			&.topRight{
+				top: -15%;
+				right: 0;				
+			}
+			&.bottomLeft{
+				bottom: -15%;
+				left: 0;				
+			}
+		}		
+	}		
+}
+
+@import "parts/mediaqueries"

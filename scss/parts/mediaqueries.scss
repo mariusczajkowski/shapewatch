@@ -1,0 +1,450 @@
+@media (max-width: 1366px){
+	section.slide{
+		&[name="about"]{
+			.background{
+				background-position-x: right;
+				background-size: cover;
+			}
+		}
+		&[name="about"]{
+			img.linesHalf{
+				bottom: -14%;				
+			}			
+		}
+		&[name="how"], &[name="kiosk"], &[name="app"], &[name="news"]{
+			img.linesHalf{
+				top: -18.5%;				
+			}				
+		}
+		&[name="how"]{
+			img.linesHalfBottom{
+				bottom: -18.5%;
+			}			
+		}	
+		&[name="app"]{
+			img.linesHalfBottom{
+				bottom: -18.5%;
+			}			
+		}
+		&[name="news"]{
+			ul.grid{
+				li{
+					div{
+						background-size: 100% !important;
+						background-position: center!important;												
+						background-repeat: no-repeat!important;											
+					}
+				}
+			}
+		}
+		&[name="contact"]{
+			img.linesHalf{
+				&.topRight{
+					top: -18.5%;
+				}
+				&.bottomLeft{
+					bottom: -14%;
+				}				
+			}			
+		}
+		img.linesHalf{
+			width: 17.8% !important;
+		}
+		img.linesHalfBottom{
+			width: 17.8% !important;
+		}		
+	}
+}
+@media (max-width: 1024px){
+	section.slide{
+		&[name="kiosk"]{
+			ul.flex{
+				li{
+					&:first-child{
+						order: 2;
+						padding-right: 2% !important;
+						.shiftImage {
+							margin-top: 0!important;
+							margin-bottom: -100%!important;
+						}
+					}
+					&:last-child{
+						order: 1;
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 991px){
+	section.slide{
+
+		&[name="about"]{
+			img.linesHalf{
+				bottom: -13.5%;			
+			}			
+		}
+		&[name="how"]{
+			img.linesHalf{
+				top: -13.5%;				
+			}
+			img.linesHalfBottom{
+				bottom: -13.5%;
+			}							
+		}
+		&[name="kiosk"]{
+			img.linesHalf{
+				top: -5.75%;				
+			}	
+		}
+		&[name="app"]{
+			img.linesHalf{
+				top: -4.35%;			
+			}
+			img.linesHalfBottom{
+				bottom: -4.25%;
+			}					
+		}
+		&[name="news"]{
+			img.linesHalf{
+				top: -7.15%;				
+			}	
+		}
+		&[name="contact"]{
+			img.linesHalf{
+				&.topRight{
+					top: -13.7%;
+				}
+				&.bottomLeft{
+					bottom: -11%;
+				}				
+			}			
+		}
+		img.linesHalf{
+			width: 17.8% !important;
+		}
+		img.linesHalfBottom{
+			width: 17.8% !important;
+		}			
+
+	}
+}
+@media (max-width: 640px){
+	section.slide{
+		&[name="news"]{
+			ul.grid{
+				li{
+					div{
+						&.noShadow, &.cover{
+							background-color: #f8f8f8!important;
+						}											
+					}
+				}
+			}
+		}
+
+		&[name="about"]{
+			img.linesHalf{
+				bottom: -11.5%;			
+			}			
+		}
+		&[name="how"]{
+			img.linesHalf{
+				top: -12%;				
+			}
+			img.linesHalfBottom{
+				bottom: -11.5%;
+			}								
+		}
+		&[name="kiosk"]{
+			img.linesHalf{
+				top: -6.5%;				
+			}	
+		}
+		&[name="app"]{
+			img.linesHalf{
+				top: -5%;			
+			}
+			img.linesHalfBottom{
+				bottom: -5%;
+			}	
+		}
+		&[name="news"]{
+			img.linesHalf{
+				top: -6.5%;				
+			}	
+		}
+		&[name="contact"]{
+			img.linesHalf{
+				&.topRight{
+					top: -12%;
+				}
+				&.bottomLeft{
+					bottom: -9.5%;
+				}				
+			}			
+		}
+		img.linesHalf{
+			width: 23.8% !important;
+		}
+		img.linesHalfBottom{
+			width: 23.8% !important;
+		}			
+
+	}	
+}
+@media (max-width: 568px){
+	section.slide{
+		&[name="about"]{
+			img.linesHalf{
+				bottom: -12.75%;			
+			}			
+		}
+		&[name="how"]{
+			img.linesHalf{
+				top: -13%;				
+			}
+			img.linesHalfBottom{
+				bottom: -12.75%;
+			}								
+		}
+		&[name="kiosk"]{
+			img.linesHalf{
+				top: -7.5%;				
+			}	
+		}
+		&[name="app"]{
+			img.linesHalf{
+				top: -6.25%;			
+			}
+			img.linesHalfBottom{
+				bottom: -6%;
+			}				
+		}
+		&[name="news"]{
+			img.linesHalf{
+				top: -7.2%;			
+			}	
+		}
+		&[name="contact"]{
+			img.linesHalf{
+				&.topRight{
+					top: -13%;
+				}
+				&.bottomLeft{
+					bottom: -10.75%;
+				}				
+			}			
+		}		
+		img.linesHalf{
+			width: 30%!important;
+		}
+		img.linesHalfBottom{
+			width: 30% !important;
+		}					
+	}	
+}
+@media (max-width: 480px){
+	section.slide{
+		&[name="about"]{
+			img.linesHalf{
+				bottom: -11%;			
+			}			
+		}
+		&[name="how"]{
+			img.linesHalf{
+				top: -12%;				
+			}
+			img.linesHalfBottom{
+				bottom: -11%;
+			}								
+		}
+		&[name="kiosk"]{
+			img.linesHalf{
+				top: -6.75%;			
+			}	
+		}
+		&[name="app"]{
+			img.linesHalf{
+				top: -6.25%;			
+			}
+			img.linesHalfBottom{
+				bottom: -6.25%;
+			}	
+		}
+		&[name="news"]{
+			img.linesHalf{
+				top: -6.2%;			
+			}	
+		}
+		&[name="contact"]{
+			img.linesHalf{
+				&.topRight{
+					top: -12%;
+				}
+				&.bottomLeft{
+					bottom: -9.5%;
+				}				
+			}			
+		}		
+		img.linesHalf{
+			width: 32% !important;
+		}
+		img.linesHalfBottom{
+			width: 32% !important;
+		}					
+	}	
+}
+@media (max-width: 420px){
+	section.slide{
+		&[name="about"]{
+			img.linesHalf{
+				bottom: -10.5%;			
+			}			
+		}
+		&[name="how"]{
+			img.linesHalf{
+				top: -11%;				
+			}
+			img.linesHalfBottom{
+				bottom: -10.5%;
+			}								
+		}
+		&[name="kiosk"]{
+			img.linesHalf{
+				top: -6.5%;			
+			}	
+		}
+		&[name="app"]{
+			img.linesHalf{
+				top: -5.75%;			
+			}
+			img.linesHalfBottom{
+				bottom: -5.75%;
+			}	
+		}
+		&[name="news"]{
+			img.linesHalf{
+				top: -5.5%;			
+			}	
+		}
+		&[name="contact"]{
+			img.linesHalf{
+				&.topRight{
+					top: -11%;
+				}
+				&.bottomLeft{
+					bottom: -8.5%;
+				}				
+			}			
+		}		
+		img.linesHalf{
+			width: 33% !important;
+		}
+		img.linesHalfBottom{
+			width: 33% !important;
+		}					
+	}	
+}
+@media (max-width: 360px){
+	section.slide{
+		&[name="about"]{
+			img.linesHalf{
+				bottom: -10.5%;			
+			}			
+		}
+		&[name="how"]{
+			img.linesHalf{
+				top: -11%;				
+			}
+			img.linesHalfBottom{
+				bottom: -10.5%;
+			}								
+		}
+		&[name="kiosk"]{
+			img.linesHalf{
+				top: -6.9%;			
+			}	
+		}
+		&[name="app"]{
+			img.linesHalf{
+				top: -6.75%;			
+			}	
+			img.linesHalfBottom{
+				bottom: -6.75%;
+			}
+		}
+		&[name="news"]{
+			img.linesHalf{
+				top: -5%;			
+			}	
+		}
+		&[name="contact"]{
+			img.linesHalf{
+				&.topRight{
+					top: -11%;
+				}
+				&.bottomLeft{
+					bottom: -8.5%;
+				}				
+			}			
+		}		
+		img.linesHalf{
+			width: 40%!important;
+		}
+		img.linesHalfBottom{
+			width: 40% !important;
+		}					
+	}	
+}
+@media (max-width: 320px){
+	section.slide{
+		&[name="about"]{
+			img.linesHalf{
+				bottom: -11%;			
+			}			
+		}
+		&[name="how"]{
+			img.linesHalf{
+				top: -11.5%;			
+			}
+			img.linesHalfBottom{
+				bottom: -11%;
+			}								
+		}
+		&[name="kiosk"]{
+			img.linesHalf{
+				top: -6.9%;			
+			}	
+		}
+		&[name="app"]{
+			img.linesHalf{
+				top: -6.5%;			
+			}
+			img.linesHalfBottom{
+				bottom: -6.5%;	
+			}	
+		}
+		&[name="news"]{
+			img.linesHalf{
+				top: -4.75%;			
+			}	
+		}
+		&[name="contact"]{
+			img.linesHalf{
+				&.topRight{
+					top: -11%;
+				}
+				&.bottomLeft{
+					bottom: -8.5%;
+				}				
+			}			
+		}		
+		img.linesHalf{
+			width: 45%!important;
+		}
+		img.linesHalfBottom{
+			width: 45% !important;
+		}					
+	}	
+}
